@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="CD_Clientes.cs" />
     <Compile Include="CD_Conexion.cs" />
+    <Compile Include="CD_Cuentas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

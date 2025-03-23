@@ -51,7 +51,8 @@ namespace CapaPresentacion
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             CD_Clientes cD_Clientes = new CD_Clientes();
-
+            //cD_Clientes.MtdAgregarClientes(txtNombres.Text, txtDireccion.Text, txtDepartamento.Text, txtPais.Text, cboxCategoria.Text, cboxEstado.Text);
+            
             try
             {
                 cD_Clientes.MtdAgregarClientes(txtNombres.Text, txtDireccion.Text, txtDepartamento.Text, txtPais.Text, cboxCategoria.Text, cboxEstado.Text);
@@ -65,7 +66,8 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.StackTrace, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-       }
+            
+        }
 
         private void dgvClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
